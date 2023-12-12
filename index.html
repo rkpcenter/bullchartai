@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-    <title>Home Page</title>
+    <title>BullChartAI | On-Demad Bullish Chart</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -83,7 +84,7 @@
                     <div class="col-xxl-8 col-xl-7 col-lg-7 align-items-center">
                         <div class="left-content-wrapper">
                             <span>Powered By TAO AI Engine & Zk Machine Learning</span>
-                            <h1>
+                            <h1 style="color: #bdd71e;">
                                 Instantly Generate a LIVE Bullish<br />
                                 Green Chart for ANY Crypto Token
                             </h1>
@@ -149,7 +150,17 @@
                 </div>
                 <div class="row">
                     <div id="downbutton" class="demo">
-                        <a href="#why"><span></span>Scroll</a>
+                        <a href="#why" id="animationScroll"><span></span>Scroll</a>
+                        <!-- <script>
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animationScroll'),
+                                path: 'animations/scroll.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                name: "Demo Animation",
+                            });
+                        </script> -->
                     </div>
                 </div>
             </div>
@@ -488,6 +499,18 @@
         <div class="container">
             <h2 class="scramble-text-3" data-scramble-line1="What Makes Us Unique" data-scramble-line2=""></h2>
             <div class="row">
+                <!-- <div class="row" id="animation4" style="text-align: left;"> -->
+                <!-- <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('animation4'),
+                            path: 'https://lottie.host/da17aa21-c810-46b9-9ece-60090afccace/7rzzEg4fpc.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Demo Animation",
+                        });
+                    </script> -->
+                <!-- </div> -->
                 <div class="col-md-6">
                     <div class="img-wrapper">
                         <img src="./images/make-unique-img-1.png" alt="img">
@@ -632,12 +655,10 @@
         </div>
     </section>
 
-    <section class="road-map" id="road-map">
+    <!-- <section class="road-map" id="road-map">
         <div class="container">
-            <!-- <h2 class="scramble-text-6" data-scramble-line1="BullChartAI RoadMap" data-scramble-line2=""></h2> -->
             <div class="road-map-wrapper">
                 <div class="row" id="animation3">
-                    <!-- <div class="col-xl-5" > -->
                     <script>
                         var animation = bodymovin.loadAnimation({
                             container: document.getElementById('animation3'),
@@ -648,7 +669,26 @@
                             name: "Demo Animation",
                         });
                     </script>
-                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="road-map" id="road-map">
+        <div class="container">
+            <div class="road-map-wrapper">
+                <div class="row" id="animation3">
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('animation3'),
+                            path: 'animations/1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Demo Animation",
+                        });
+                    </script>
 
                 </div>
             </div>
@@ -659,22 +699,26 @@
         <div class="container small">
             <h2 class="scramble-text-7" data-scramble-line1="Service Tiers" data-scramble-line2=""></h2>
             <div class="row" data-aos="fade-up">
-                <div class="col-lg-4" data-aos="fade-up">
-                    <div class="service-card heading-animation">
-                        <span data-aos="heading-animation" data-aos-duration="1500">Echo</span>
-                        <ul data-aos="heading-animation" data-aos-duration="1500">
-                            <li>
-                                <p>Tokens in Wallet : 0.02% or 2000 $BULLAI</p>
-                            </li>
-                            <li>
-                                <p>Can Invest in Campaigns</p>
-                            </li>
-                            <li>
-                                <p>VIP Group Access</p>
-                            </li>
-                        </ul>
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="service-modal-wrapper">
+                        <div class="service-card heading-animation">
+                            <span>Echo</span>
+                            <ul>
+                                <li>
+                                    <p>Tokens in Wallet : 0.02% or 2000 $BULLAI</p>
+                                </li>
+                                <li>
+                                    <p>Can Invest in Campaigns</p>
+                                </li>
+                                <li>
+                                    <p>VIP Group Access</p>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+                
 
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="service-card">
@@ -700,11 +744,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4" data-aos="fade-up">
+                <div class="col-lg-4" data-aos="fade-left">
                     <div class="service-card">
-                        <span data-aos="heading-animation" data-aos-duration="1500">Odyssey</span>
+                        <span>Odyssey</span>
 
-                        <ul data-aos="heading-animation" data-aos-duration="1500">
+                        <ul>
                             <li>
                                 <p>Tokens in Wallet : 0.10% or 10000 $BULLAI</p>
                             </li>
