@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6">
+                    <a href="/index.html" class="logo">
+                        <img src="./images/logo.svg" alt="" />
+                    </a>
+                </div>
+                <div class="col-lg-9 col-6">
+                    <nav>
+                        <ul class="menu-wrapper">
+                            <li><a href="#how-it-works">How it works</a></li>
+                            <li>
+                                <a href="https://bullchartai.gitbook.io/bullchartai/" target="_blank">Whitepaper</a>
+                            </li>
+                            <li><a href="#token">Tokenomics</a></li>
+                            <li><a href="#road-map">Roadmap</a></li>
+                            <li>
+                                <a href="#" class="btn-style">
+                                    <span> </span>
+                                    <span> </span>
+                                    <span> </span>
+                                    <span> </span>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/btn-arrow-left.svg" alt="" />
+                                    </div>
+                                    <span>LIVE Dashboard</span>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/btn-arrow-right.svg" alt="" />
+                                    </div>
+                                </a>
+
+                                <!-- <a href="#" class="btn-style">
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/btn-arrow-left.svg" alt="" />
+                                    </div>
+                                    <span>LIVE Dashboard</span>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/btn-arrow-right.svg" alt="" />
+                                    </div>
+                                </a> -->
+                            </li>
+                        </ul>
+                        <span id="menu-toggle-btn" role="button"> </span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="inner-banner">
+                <div class="row backward" id="animation-container" style="text-align: left;">
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('animation-container'),
+                            path: 'animations/Hero-Bull.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Demo Animation",
+                        });
+                    </script>
+                </div>
+                <div class="row downward">
+                    <div class="col-xxl-8 col-xl-7 col-lg-7 align-items-center">
+                        <div class="left-content-wrapper">
+                            <span>Powered By TAO AI Engine & Zk Machine Learning</span>
+                            <h1>
+                                Instantly Generate a LIVE Bullish<br />
+                                Green Chart for ANY Crypto Token
+                            </h1>
+                            <ul>
+                                <li>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/rotating-arrow-icon.svg" alt="" />
+                                    </div>
+                                    <strong>First Mover</strong>
+                                </li>
+                                <li>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/rotating-arrow-icon.svg" alt="" />
+                                    </div>
+                                    <strong>Revenue Share</strong>
+                                </li>
+                                <li>
+                                    <div class="icon-wrapper">
+                                        <img src="./images/icons/rotating-arrow-icon.svg" alt="" />
+                                    </div>
+                                    <strong>100% Automated</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-5 col-lg-5 align-items-center">
+                        <div class="right-content-wrapper">
+                            <p>
+                                BullChartIA Protocol is dedicated to generating
+                                <strong> Extraordinary Profits </strong>by creating a LIVE,
+                                Bullish Green Candle for any Crypto Token, directly on the
+                                Blockchain
+                            </p>
+                            <div class="actions-wrapper">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="#" class="black-btn">
+                                            LIVE Dashboard (Login Required)
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://dexscreener.com/ethereum/0x11b815efb8f581194ae79006d24e0d814b7697f6"
+                                            class="black-btn" target="_blank">
+                                            Live Chart
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://app.uniswap.org/swap?outputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&chain=ethereum"
+                                            class="black-btn" target="_blank">Uniswap</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://t.me/BullsChartAI" class="black-btn"
+                                            target="_blank">Telegram</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://twitter.com/BullsChartAI" class="black-btn"
+                                            target="_blank">Twitter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="downbutton" class="demo">
+                        <a href="#why"><span></span>Scroll</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why" id="why">
+        <div class="container">
+            <!--        <h2 class="scramble-text-1" data-scramble="WHY BITTENSOR (TAO) AI Opposed to OPEN AI">Scroll to See the Magic</h2>-->
+            <h2 class="scramble-text-1" data-scramble-line1="WHY BITTENSOR (TAO) AI"
+                data-scramble-line2="Opposed to OPEN AI"></h2>
+            <!--<h2 data-aos="slide-up" class="scramble-text">
+         <span class="heading-animation">
+           <span data-aos="heading-animation" data-aos-duration="1500">WHY BITTENSOR (TAO) AI</span>
+         </span>
+            <br/>
+            <span class="heading-animation">
+            <span data-aos="heading-animation" data-aos-duration="1500">Opposed to OPEN AI</span>
+          </span>
+        </h2>-->
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="why-card-wrapper">
+                        <div class="why-card card-1">
+                            <h3 data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Core</span>
+                                </span>
+                            </h3>
+                            <p data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Core of the Bittensor
+                                        network,</span>
+                                </span>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">& by extension,
+                                        BullChartAI, is</span>
+                                </span>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">its focus on
+                                        decentralization.</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 l-90 col-lg-6">
+                    <div class="why-card-wrapper">
+                        <div class="why-card card-2">
+                            <h3 data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Decentralized
+                                        System</span>
+                                </span>
+                            </h3>
+                            <p data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Bittensor operates
+                                        without a central point</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">of control or failure,
+                                        significantly</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">enhancing its security
+                                        and making it</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">resistant to
+                                        censorship.</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 r-90 col-lg-6">
+                    <div class="why-card-wrapper">
+                        <div class="why-card card-3">
+                            <h3 data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500"> Dynamic AI Model
+                                        Pricing</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">by Peer Systems</span>
+                                </span>
+
+                            </h3>
+                            <p data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">A unique aspect of the
+                                        Bittensor network is how</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">AI models are evaluated
+                                        and priced. In this</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">network, AI models are
+                                        appraised and</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">valued by other AI
+                                        systems, creating a</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">dynamic and
+                                        decentralized market for</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">artificial
+                                        intelligence</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="why-card-wrapper">
+                        <div class="why-card card-4">
+                            <h3 data-aos="slide-up" data-aos-duration="1500"><span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Decentralized</span>
+                                </span>
+                            </h3>
+                            <p data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">approach is not just a
+                                        technical</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">feature but va
+                                        philosophical one,</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">aligning with our vision
+                                        of</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">making AI accessible
+                                        and</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">resilient.</span>
+                                </span> <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="why-card-wrapper">
+                        <div class="why-card card-5">
+                            <h3 data-aos="slide-up" data-aos-duration="1500"><span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Open Development and
+                                        Encouraged Innovation</span>
+                                </span>
+                            </h3>
+                            <p data-aos="slide-up" data-aos-duration="1500">
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500"> The BitAPAI and
+                                        Bittensor network champion open development
+                                        and innovation.</span>
+                                </span> <br>
+                                <span class="heading-animation">
+                                    <span data-aos="heading-animation" data-aos-duration="1500">Access to the API is
+                                        free, encouraging developers to explore
+                                        and create on the network.</span>
+                                </span>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-modal">
+        <div class="container">
+            <h2 class="scramble-text-2" data-scramble-line1="BullChartAI Engine & Zk Machine"
+                data-scramble-line2="Zk-Machine Learning Models" data-aos="fade-up"></h2>
+            <!--<h2 data-aos="slide-up" data-aos-duration="1500">
+         <span class="heading-animation">
+           <span data-aos="heading-animation" data-aos-duration="1500">BullChartAI Engine & Zk Machine</span>
+         </span><br/>
+            <span class="heading-animation">
+            <span data-aos="heading-animation" data-aos-duration="1500">Learning Models</span>
+          </span>
+        </h2>-->
+            <div class="row">
+                <div class="col-xl-6" data-aos="fade-up">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-1">
+                            <div class="content-wrapper">
+                                <h3>
+                                    BullChartAI Engine<br />
+                                    & Zk Machine<br />
+                                    Learning Models
+                                </h3>
+                                <p>
+                                    Using Zero Knowledge Machine Learning (ZKML), BllchartAI
+                                    engine is creating zero-knowledge proofs of the inference
+                                    step of the ML model coupled with performant hardware.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6" data-aos="fade-up">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-2">
+                            <div class="content-wrapper">
+                                <h3>
+                                    Heuristic <br />
+                                    optimization
+                                </h3>
+                                <p>
+                                    A problem-solving approach that uses rules of thumb or
+                                    "heuristics" to find good solutions to problems that are
+                                    difficult to solve using traditional optimization methods.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6" data-aos="fade-right">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-3">
+                            <div class="content-wrapper">
+                                <h3>
+                                    Fully Homomorphic<br />
+                                    Encryption (FHE) ML
+                                </h3>
+                                <p>
+                                    FHE allows developers to perform operations on encrypted
+                                    data and when decrypted the result will be the output of the
+                                    operation performed on the original unencrypted input.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6" data-aos="fade-left">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-4">
+                            <div class="content-wrapper">
+                                <h3>
+                                    ZK proofs vs.<br />
+                                    Validity Proofs
+                                </h3>
+                                <p>
+                                    These terms are oftentimes used interchangeably in the
+                                    industry since validity proofs are ZK proofs that don't hide
+                                    parts of the computation or its results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6" data-aos="fade-right">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-5">
+                            <div class="content-wrapper">
+                                <h3>Validity ML</h3>
+                                <p>
+                                    SNARK/STARK proofs of ML models where all computations are
+                                    publicly visible to the verifier (). Any verifier can then
+                                    prove the computational correctness of the ML models.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6" data-aos="fade-left">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-6">
+                            <div class="content-wrapper">
+                                <h3>ZKML</h3>
+                                <p>
+                                    ZK proofs of ML models where computations are being hidden
+                                    from the verifier (using the zero-knowledge property). The
+                                    prover can prove the computational correctness of the ML
+                                    models without revealing any further information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6" data-aos="fade-up">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-7">
+                            <div class="content-wrapper">
+                                <h3>
+                                    Decentralized AI<br />
+                                    Engine
+                                </h3>
+                                <p>
+                                    I'm BullChartAI your advanced AI engine, powered by the
+                                    innovative BitAPAI technology from Bittensor (TAO). One of
+                                    the first of its kind, I am an AI engine built on a
+                                    decentralized neural network, marking a new era in
+                                    artificial intelligence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6" data-aos="fade-up">
+                    <div class="modal-card-wrapper">
+                        <div class="modal-card card-8">
+                            <div class="content-wrapper">
+                                <h3>
+                                    Privacy and<br />
+                                    security
+                                </h3>
+                                <p>
+                                    Privacy and security are paramount in my design. In today's
+                                    digital world, I ensure the protection of your data and the
+                                    confidentiality of your interactions, backed by the robust
+                                    security features of blockchain technology.In summary,
+                                    BullChartAi engine has no single point of failure
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="make-us-unique">
+        <div class="container">
+            <h2 class="scramble-text-3" data-scramble-line1="What Makes Us Unique" data-scramble-line2=""></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <img src="./images/make-unique-img-1.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <img src="./images/make-unique-img-1.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="upper-div">
+                <div class="content-wrapper">
+                    <div class="inner-content-wrapper text-center">
+                        <h2 class="scramble-text-4" data-scramble-line1="How it Works" data-scramble-line2=""></h2>
+                        <a href="#" class="btn-style justify-content-between">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span>Intention</span>
+                        </a>
+                        <p>Generate a LIVE Bullish Green Chart for Any Crypto Token</p>
+                        <a href="#" class="btn-style justify-content-between">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span>Process</span>
+                        </a>
+                        <p>
+                            BullChartAI introduces a novel approach to market dynamics. By
+                            initiating multiple, simultaneous buy orders from diverse,
+                            unconnected wallets, we craft an illusion of rapid, positive
+                            price movement. This strategy effectively produces a bullish
+                            green chart, capturing the attention of new investors and
+                            triggering trending platforms to spotlight the token.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-div">
+                <div class="desktop-img-wrapper" id="animation2">
+                    <!-- <img src="./images/how-works-desktop-image.png" alt="" /> -->
+                    <!-- <div class="col-xl-5" "> -->
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('animation2'),
+                            path: 'animations/2.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Demo Animation",
+                        });
+                    </script>
+                    <!-- </div> -->
+                </div>
+                <div class="mobile-img-wrapper">
+                    <img src="./images/how-it-wroks-hexagone-img.png" alt="" />
+                </div>
+                <div class="unique-method-wrapper-for-mobile">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="img-wrapper">
+                                <img src="./images/unique-method-image-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="token" id="token">
+        <div class="container">
+            <h2 class="scramble-text-5" data-scramble-line1="Tokenomics" data-scramble-line2=""></h2>
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <div class="content-wrapper">
+                        <div class="chart-wrapper">
+                            <strong>BULL CHART AI</strong>
+                            <ul>
+                                <li>
+                                    <span>Total Supply</span>
+                                    <p>10 Million</p>
+                                </li>
+                                <li>
+                                    <span>Chain</span>
+                                    <p>ETH</p>
+                                </li>
+                                <li>
+                                    <span>Liquidity Lock</span>
+                                    <p>12 Months</p>
+                                </li>
+                                <li>
+                                    <span>Tax Buy/Sell</span>
+                                    <p>5%/5%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="line"></div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="img-wrapper">
+                        <img src="./images/token-image.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="road-map" id="road-map">
+        <div class="container">
+            <!-- <h2 class="scramble-text-6" data-scramble-line1="BullChartAI RoadMap" data-scramble-line2=""></h2> -->
+            <div class="road-map-wrapper">
+                <div class="row" id="animation3">
+                    <!-- <div class="col-xl-5" > -->
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('animation3'),
+                            path: 'animations/1.json',
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: "Demo Animation",
+                        });
+                    </script>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container small">
+            <h2 class="scramble-text-7" data-scramble-line1="Service Tiers" data-scramble-line2=""></h2>
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="service-card heading-animation">
+                        <span data-aos="heading-animation" data-aos-duration="1500">Echo</span>
+                        <ul data-aos="heading-animation" data-aos-duration="1500">
+                            <li>
+                                <p>Tokens in Wallet : 0.02% or 2000 $BULLAI</p>
+                            </li>
+                            <li>
+                                <p>Can Invest in Campaigns</p>
+                            </li>
+                            <li>
+                                <p>VIP Group Access</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <span data-aos="heading-animation" data-aos-duration="1500">Platinum</span>
+
+                        <ul data-aos="heading-animation" data-aos-duration="1500">
+                            <li>
+                                <p>Tokens in Wallet : 0.05% or 5000 $BULLAI</p>
+                            </li>
+                            <li>
+                                <p>Can Invest in Campaigns</p>
+                            </li>
+                            <li>
+                                <p>VIP Group Access</p>
+                            </li>
+                            <li>
+                                <p>Create New Group Campaign</p>
+                            </li>
+                            <li>
+                                <p>Revenue Share</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <span data-aos="heading-animation" data-aos-duration="1500">Odyssey</span>
+
+                        <ul data-aos="heading-animation" data-aos-duration="1500">
+                            <li>
+                                <p>Tokens in Wallet : 0.10% or 10000 $BULLAI</p>
+                            </li>
+                            <li>
+                                <p>Can Invest in Campaigns</p>
+                            </li>
+                            <li>
+                                <p>VIP Group Access</p>
+                            </li>
+                            <li>
+                                <p>Create New Group Campaign</p>
+                            </li>
+                            <li>
+                                <p>Revenue Share</p>
+                            </li>
+                            <li>
+                                <p>Create Individual Campaign</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container small">
+            <h2 class="scramble-text-8" data-scramble-line1="FAQ's" data-scramble-line2=""></h2>
+            <div class="accordion-wrapper">
+                <div class="accordion accordion-flush" id="frequently-asked-qustions">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                aria-controls="flush-collapseOne">
+                                What makes $BullsAI Better than other AI projects?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    $BullsAI dont have any competitors and this concept of
+                                    moving the market is extremely novel and revolutionize
+                                    crypto industry.
+                                </p>
+                                <p>
+                                    $BullsAI is first mover in both concept wise and technology
+                                    front. No other project use TAO AI engine and ZK Machine
+                                    learning combined to develop this powerful platform.
+                                </p>
+                                <p>
+                                    Above all this is not a platform anyone can clone in a day
+                                    or a week. This platform is under development for more than
+                                    6 months.
+                                </p>
+                                <p>
+                                    Investing in $BullsAI is not only a smart investment
+                                    decision but also an opportunity to shape the future of AI
+                                    and crypto market. By supporting BullsChartAI, you are
+                                    contributing to the advancement of technology and innovation
+                                    in the field of artificial intelligence. With our
+                                    comprehensive range of AI & ZK ML capabilities, we are ready
+                                    to explore new frontiers and push the boundaries of what AI
+                                    can achieve. Together, let's create in the future of AI with
+                                    BullsChartAI.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Why should I buy $BullsAI?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    When you become a $BULLSAI holder, you will not only gain
+                                    the potential for financial profit but also unlock a super
+                                    power to move the market.
+                                </p>
+                                <p>
+                                    Up until now, only whales had this power, now with $BullsAI
+                                    you as an individual investor can do this.
+                                </p>
+                                <p>
+                                    This is huge and no other project can claim this utility or
+                                    can build a platform like this on a whim
+                                </p>
+                                <p>
+                                    As an $BullsAI holder, you will have access to tiered holder
+                                    Telegram groups, where high net individuals hand out based
+                                    on your $BullsAI holdings.
+                                </p>
+                                <p>
+                                    Joining the $BullsAI community means not only investing in a
+                                    project with tremendous potential but also gaining access to
+                                    a variety of exclusive access to high net individuals
+                                    advanced AI capabilities. Start your journey with $BullsAI
+                                    today and immerse yourself in a world of cutting-edge crypto
+                                    revolution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Will there be revenue sharing?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    Yes in ETH. 5% of the profit is shared with $BullsAI
+                                    holders. Since the revenue share is in Ether, there is no
+                                    price pressure for $BullsAI token.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                How does Revenue Share works?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    Token holders can login to BullChartAI dashboard and claim
+                                    their rewards. We verify the users based on BullAI tokens in
+                                    the user wallet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                What are $BULLSAI Tokenomics?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    Taxes 5/5 2% Marketing 2% Development 1% Team Liquidity
+                                    locked 6 months 75% added to Liquidity, 5% CEX 5% Team, 5%
+                                    Staking rewards, 10% Private Sale.
+                                </p>
+                                <p>
+                                    A majority of these tokens will be locked on a linear
+                                    schedule.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                When will the $BullsAi dAPP be released?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>Testnet dApp is already released.</p>
+                                <p>
+                                    The BullsChartAI web dApp will be released along with the
+                                    token launch.
+                                </p>
+                                <p>Holders will get exclusive benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                Is it possible to compromise the protocol and find out
+                                information about depositors?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    No, BullChartAI is a decentralized protocol based on zero
+                                    knowledge proofs. Its smart contracts are immutable, have no
+                                    admins, and the proofs are based on strong cryptography.
+                                    Only the user possessing the wallet private key is able to
+                                    link deposit and withdrawal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                Do you collect data?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    No, we don't collect data. BullChartAI only have access to
+                                    the wallet address of the investor, not the private key or
+                                    seed phrase of the wallet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                Which steps can be taken to ensure the anonymity of<br />
+                                participation in the protocol?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    TAO Decentralized AI guarantees that there is no one point
+                                    failure to the BullChartAI. We feed TAO AI with the lessons
+                                    learned from the Zk Machine learning algorithm. We dont
+                                    store any user information in our engine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                aria-controls="flush-collapseTen">
+                                How do you protect user privacy?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>
+                                    BullChartAI protocol solves only on-chain pieces of privacy.
+                                    Users also must follow the best practices while investing in
+                                    crypto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                                aria-controls="flush-collapseEleven">
+                                Is the contract verified?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>Yes Contract is verified. Liquidity locked.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                                aria-controls="flush-collapseTwelve">
+                                Is the code open-source?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThirteen" aria-expanded="false"
+                                aria-controls="flush-collapseThirteen">
+                                What is the Contract address for BullChartAI?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThirteen" class="accordion-collapse collapse"
+                            data-bs-parent="#frequently-asked-qustions">
+                            <div class="accordion-body">
+                                <p>Contract Address : 0XWillBePublishedAtLaunch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profit">
+        <div class="container small">
+            <div class="content-wrapper">
+                <div class="inner-content-wrapper text-center">
+                    <h2 class="scramble-text-9" data-scramble-line1="Lets Make Some Profit" data-scramble-line2=""></h2>
+                    <a href="#" class="btn-style">
+                        <span> </span>
+                        <span> </span>
+                        <span> </span>
+                        <span> </span>
+
+                        <div class="icon-wrapper">
+                            <img src="./images/icons/btn-arrow-left.svg" alt="" />
+                        </div>
+                        <span>LIVE Dashboard</span>
+                        <div class="icon-wrapper">
+                            <img src="./images/icons/btn-arrow-right.svg" alt="" />
+                        </div>
+                    </a>
+                    <ul class="action-wrapper">
+                        <li>
+                            <a href="https://dexscreener.com/ethereum/0x11b815efb8f581194ae79006d24e0d814b7697f6"
+                                class="black-btn" target="_blank">
+                                Live Chart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.uniswap.org/swap?outputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&chain=ethereum"
+                                class="black-btn" target="_blank">Uniswap</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/BullsChartAI" class="black-btn" target="_blank">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BullsChartAI" class="black-btn" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo-wrapper">
+                <a href="/index.html" class="logo">
+                    <img src="./images/logo.svg" alt="" />
+                </a>
+                <p>On-demand live Bullish Green Chart</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/lazysizes.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

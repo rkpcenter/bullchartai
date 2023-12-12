@@ -1,0 +1,296 @@
+@import "../fonts/stylesheet.css";
+$screen-xs: 767px;
+
+$screen-lg: 1024px;
+
+$techMono: "Share Tech Mono";
+
+$primary01: #b7ff00;
+$primary02: #bdd71e;
+
+$text-primary01: #777;
+$border-primary01: #f3f3f3;
+
+$white: #ffffff;
+$light-white: rgba(255, 255, 255, 0.9);
+$black: #000000;
+$yellow: yellow;
+
+$layer-black: #04171a;
+$yellow: #fec63f;
+
+$box-shadow01: 0 1px 119px rgba(0, 0, 0, 0.15);
+$btn-shadow: 0 2.01389px 2.01389px rgba(0, 0, 0, 0.25);
+$transition: all 0.2s ease-in-out;
+
+body {
+  font-family: $techMono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+  overflow-x: hidden;
+  background: #00040d;
+}
+
+.container {
+  max-width: 1623px;
+  &.small {
+    max-width: 1423px;
+  }
+}
+
+//      ****************************  Text Element  ****************************
+
+h1 {
+  color: $white;
+  font-size: 34.606px;
+  font-weight: 400;
+  line-height: 50.506px;
+  font-family: inherit;
+  @media (max-width: $screen-lg) {
+    font-size: 22px;
+    line-height: 30px;
+    br {
+      display: none;
+    }
+  }
+}
+
+h2,
+.h2 {
+  color: $primary01;
+  text-align: center;
+  font-family: inherit;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79.3px;
+  @media (max-width: $screen-lg) {
+    font-size: 30px;
+    line-height: 40px;
+    br {
+      display: none;
+    }
+  }
+  @media screen and (max-width: $screen-xs) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  span{
+    color: $primary01;
+    text-align: center;
+    font-family: inherit;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 79.3px;
+    @media (max-width: $screen-lg) {
+      font-size: 30px;
+      line-height: 40px;
+      br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $screen-xs) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}
+
+h3,
+.h3 {
+  color: $white;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  @media (max-width: $screen-lg) {
+    font-size: 24px;
+    br {
+      display: none;
+    }
+  }
+  span{
+    color: $white;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: $screen-lg) {
+      font-size: 24px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+p,
+.p {
+  color: $white;
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  @media (max-width: $screen-lg) {
+    font-size: 16px;
+    br {
+      display: none;
+    }
+  }
+  span{
+    color: $white;
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: $screen-lg) {
+      font-size: 16px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+span {
+  font-family: $techMono;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: $black;
+  display: inline-block;
+}
+
+a,
+.a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: $white;
+  text-decoration: none;
+  &:focus,
+  &:active,
+  &.active,
+  &:hover {
+    color: $primary01;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $techMono;
+  color: $black;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+}
+
+//      ****************************  Button Element  ****************************
+
+.btn-style {
+  display: flex;
+  width: 286px;
+  height: 55.977px;
+  padding: 12.894px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.894px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #b7d752;
+  transition: all .3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    #d7f280 0.05%,
+    rgba(195, 208, 151, 0.41) 133.16%
+  );
+  box-shadow: 0 1px 7px 0 #d7f280;
+  @media screen and (max-width: 1398px) and (min-width: 1025px) {
+    width: 250px;
+  }
+  @media (max-width: $screen-lg) {
+    width: 100%;
+  }
+  &:hover{
+    opacity: .8;
+  }
+}
+
+.black-btn {
+  display: flex;
+  width: 100%;
+  height: 52.077px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.781px;
+  flex-shrink: 0;
+  border-radius: 16.614px;
+  background: #00030c;
+  box-shadow: 0 3.655px 10.05px 0 rgba(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+  color: #b7d752;
+  font-family: inherit;
+  font-size: 20.521px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+//      ****************************  Global Element  ****************************
+
+.form {
+  .form-group {
+    margin-bottom: 24px;
+  }
+  label {
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 5px;
+    }
+  }
+  .form-control {
+    border-radius: 8px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    height: 64px;
+    padding: 8px 17px 8px;
+    border: none;
+    color: $text-primary01;
+    position: relative;
+    outline: none;
+    appearance: none;
+    background-color: $white;
+    @media screen and (max-width: 991px) {
+      height: 55px;
+    }
+    &::placeholder {
+      color: $text-primary01;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid $border-primary01;
+    border-radius: 4px;
+  }
+}
